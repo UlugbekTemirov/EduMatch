@@ -73,7 +73,7 @@ function App() {
             {routes.map((route, index) => (
               <Route
                 key={index}
-                path={`/${route.path}`}
+                path={`${route.path}`}
                 element={<Navigate to={`/uz/${route.path}`} replace />}
               />
             ))}

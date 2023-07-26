@@ -20,6 +20,7 @@ export const Button = (props) => {
       sx={{
         borderColor: "rgba(255,255,255,0.5)",
         borderRadius: "0.5rem",
+        backdropFilter: "blur(5px)",
         "&:hover": {
           borderColor: "white",
         },

@@ -22,7 +22,7 @@ const HoverTracker = ({ left, width, init }) => {
         left: `${left}px`,
         width: `${width}px`,
       }}
-      className={`bg-white/[0.1] absolute duration-500  ease-in-out ${
+      className={`bg-white/[0.1] absolute duration-500 backdrop-blur-sm ease-in-out ${
         init && "transition-[width]"
       } -z-1 left-0 top-1/2 -translate-y-1/2 h-1/2 rounded-md`}
     />
@@ -34,7 +34,8 @@ const BottomBar = () => {
   const location = useLocation();
 
   const checkOpenLabel = (path) => {
-    const route = location.pathname.split("/")[2];
+    const arr = location.pathname.split("/");
+    const route = arr.length >= 2 && arr[2];
     return route === path;
   };
 
@@ -145,6 +146,14 @@ const Navbar = () => {
     },
     {
       name: {
+        en: "News",
+        uz: "Yangiliklar",
+        ru: "Новости",
+      },
+      route: "news",
+    },
+    {
+      name: {
         en: "About us",
         uz: "Biz haqimizda",
         ru: "О нас",
@@ -184,7 +193,7 @@ const Navbar = () => {
   const location = useLocation();
   useEffect(() => {
     const { pathname } = location;
-    const links = ["learning-centers", "categories", "about"];
+    const links = ["learning-centers", "categories", "about", "news"];
     const activeLink = pathname.split("/")[2];
     if (links.includes(activeLink)) {
       setTimeout(() => {
@@ -225,7 +234,7 @@ const Navbar = () => {
     dispatch(setSidebar(!sidebar));
   };
 
-  if (location.pathname.split("/")[2].toLowerCase() === "auth") return null;
+  if (location.pathname.split("/")[2]?.toLowerCase() === "auth") return null;
 
   return (
     <>

@@ -12,7 +12,7 @@ import Loader from "./components/loader";
 import NotFound from "./components/not-found";
 
 // layouts
-import Main from "./layout/main";
+import Main from "./layout/main.layout";
 
 // utils
 import LanguageRouter from "./utils/LanguageRouter";

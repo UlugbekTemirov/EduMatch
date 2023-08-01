@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Container from "../layout/container";
+import Container from "../layout/container.layout";
 import { Link, useLocation } from "react-router-dom";
 import Translate from "../utils/Translate";
 import { useDispatch, useSelector } from "react-redux";
@@ -13,7 +13,7 @@ import {
 } from "react-icons/tb";
 import { FaRegUserCircle as ProfileIcon } from "react-icons/fa";
 import { BottomNavigation, BottomNavigationAction, Box } from "@mui/material";
-import Sidebar from "./sidebar";
+import Sidebar from "./sidemenu";
 
 const HoverTracker = ({ left, width, init }) => {
   return (

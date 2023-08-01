@@ -1,5 +1,6 @@
 import React from "react";
 import PagesHeader from "../../components/pages-header";
+import SidebarLayout from "../../layout/sidebar.layout";
 
 const Index = () => {
   return (
@@ -12,6 +13,10 @@ const Index = () => {
           ru: "Учебные центры",
         }}
       />
+
+      <section>
+        <SidebarLayout>Learning centers</SidebarLayout>
+      </section>
     </div>
   );
 };

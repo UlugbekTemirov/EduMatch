@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Container from "../../layout/container";
+import Container from "../../layout/container.layout";
 import { Button } from "@mui/material";
 
 const Index = () => {

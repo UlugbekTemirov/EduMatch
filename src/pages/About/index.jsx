@@ -1,13 +1,16 @@
 import React from "react";
-import PagesHeader from "../../components/pages-header";
+
+// components
+import PagesHeader from "components/pages-header";
+
+// assets
+import about_header_img from "assets/images/about-us-header.jpg";
 
 const Index = () => {
   return (
     <div>
       <PagesHeader
-        image={
-          "https://www.tdream.it/wp-content/uploads/2016/11/About-Us-3.jpg  "
-        }
+        image={about_header_img}
         title={{
           en: "About",
           uz: "Biz haqimizda",

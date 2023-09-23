@@ -1,5 +1,8 @@
 import React from "react";
-import PagesHeader from "../../components/pages-header";
+import PagesHeader from "components/pages-header";
+
+// assets
+import categories_header_img from "assets/images/categories-header.jpg";
 
 const Index = () => {
   return (
@@ -10,9 +13,7 @@ const Index = () => {
           uz: "Yo'nalishlar",
           ru: "Категории",
         }}
-        image={
-          "https://images.adsttc.com/media/images/619d/4b60/f91c/818c/6e00/0006/large_jpg/shutterstock_728342668.jpg?1637698337"
-        }
+        image={categories_header_img}
       />
     </div>
   );

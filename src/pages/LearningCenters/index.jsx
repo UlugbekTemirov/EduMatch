@@ -1,12 +1,19 @@
 import React from "react";
-import PagesHeader from "../../components/pages-header";
-import SidebarLayout from "../../layout/sidebar.layout";
+
+// components
+import PagesHeader from "components/pages-header";
+
+// layout
+import SidebarLayout from "layout/sidebar.layout";
+
+// assets
+import universities_header_img from "assets/images/universities-header.jpg";
 
 const Index = () => {
   return (
     <div>
       <PagesHeader
-        image={"https://mentalaba.uz/assets/universities_bg.jpg"}
+        image={universities_header_img}
         title={{
           en: "Learning Centers",
           uz: "O'quv markazlari",

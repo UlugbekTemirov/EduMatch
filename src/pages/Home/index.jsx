@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../../layout/container.layout";
+import Container from "layout/container.layout";
 
 const Index = () => {
   return (

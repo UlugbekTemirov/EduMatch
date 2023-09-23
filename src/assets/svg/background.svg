@@ -1,0 +1,14 @@
+
+<svg class="w-full h-full" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+<circle cx="32.5" cy="32.5" r="32.5" fill="url(#paint_a632026)"></circle>
+<defs>
+<linearGradient id="paint_a632026" x1="0" y1="0" x2="65" y2="65" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#0044F1">
+<animate attributeName="stop-color" values="#0044F1;#F69742AA;#0044F1;" dur="5s" repeatCount="indefinite"></animate>
+</stop>
+<stop offset="1" stop-color="#752F70">
+<animate attributeName="stop-color" values="#752F70;#F69742AF;#752F70;" dur="8s" repeatCount="indefinite"></animate>
+</stop>
+</linearGradient>
+</defs>
+</svg>
